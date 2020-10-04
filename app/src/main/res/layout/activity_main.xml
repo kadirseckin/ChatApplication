@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="276dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Email giriniz"
+        android:inputType="textPersonName"
+        android:textAllCaps="false"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/girisButon"
+        android:layout_width="136dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="casual"
+        android:onClick="girisYap"
+        android:text="Giris Yap"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parolaText" />
+
+    <Button
+        android:id="@+id/kayitButon"
+        android:layout_width="132dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:fontFamily="casual"
+        android:onClick="kayitOl"
+        android:text="Kayit Ol"
+        android:textColor="@color/browser_actions_bg_grey"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/girisButon"
+        app:layout_constraintTop_toBottomOf="@+id/parolaText" />
+
+    <EditText
+        android:id="@+id/parolaText"
+        android:layout_width="274dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Parola giriniz"
+        android:inputType="textPassword"
+        android:textColor="@color/browser_actions_text_color"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="179dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/girisButon"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_genelsohbet" android:title="Genel Sohbet"></item>
+    <item android:id="@+id/menu_profil" android:title="Profil" ></item>
+    <item android:id="@+id/menu_kullanicilar" android:title="Kullanicilar"></item>
+
+    <item android:id="@+id/menu_cikis" android:title="Çıkış Yap" ></item>
+
+</menu>
